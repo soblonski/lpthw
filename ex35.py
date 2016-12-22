@@ -4,6 +4,7 @@ def gold_room():
 	print "This room is full of Gold. How much do you take?"
 	
 	next = raw_input("> ")
+	if next.isdigit(): # "0" in next or "1" in next:
 		how_much = int(next)
 	else:
 		dead("Man, learn to type a number.")
